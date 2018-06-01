@@ -5,7 +5,7 @@ let environment = require('../lib/environment');
 
 const paths = {
 	src: environment.production ? './dist' : './tmp',
-	dest: './docs/css'
+	dest: './public/css'
 }
 
 let fundamentalCss = environment.production ? 'fundamental-ui.min.css' : 'fundamental-ui.css';

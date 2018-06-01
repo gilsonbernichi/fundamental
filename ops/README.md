@@ -32,7 +32,7 @@ Each output has a `build` task that chains the tasks together. Individual tasks 
 
 ## The docs
 * Inputs: `docs`
-* Outputs: `docs/_site`
+* Outputs: `public`
 
 The documentation uses Jekyll to generate a static site. Dependencies on packaging tasks should be very clearly defined in the main build task, i.e., build the package before including it into the website. Do not mix packaging tasks into the unrelated docs tasks.
 
@@ -40,7 +40,7 @@ The documentation uses Jekyll to generate a static site. Dependencies on packagi
 `gulp`
 
 ### Individual tasks
-* `gulp docs-resources` optimizes and outputs svgs to `docs/_site/images` (should handle images as well)
+* `gulp docs-resources` optimizes and outputs svgs to `public/images` (should handle images as well)
 * `docs-css`
 * `docs-icons`
 * `docs-styleguide`

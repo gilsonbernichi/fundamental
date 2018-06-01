@@ -4,7 +4,7 @@ let environment = require('../lib/environment');
 
 const paths = {
 	src: './dist',
-	dest: './docs/css'
+	dest: './public/css'
 }
 
 const task = (cb) => {

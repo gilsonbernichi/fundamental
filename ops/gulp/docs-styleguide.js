@@ -9,7 +9,7 @@ const debug = require('gulp-debug');
 const task = (cb) => {
 	return gulp.src(['./docs/styles/*.scss', './docs/styles/_*.scss'])
     	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    	.pipe(gulp.dest('./docs/css'));
+    	.pipe(gulp.dest('./public/css'));
 }
 
 gulp.task('docs-styleguide', task)

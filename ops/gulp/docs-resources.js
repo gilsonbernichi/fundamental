@@ -8,7 +8,7 @@ const task = (cb) => {
           plugins: [{removeTitle: true}, {cleanupIDs: true}]
       })]
     ))
-    .pipe(gulp.dest('./docs/images'));
+    .pipe(gulp.dest('./public/images'));
 }
 
 gulp.task('docs-resources', task)

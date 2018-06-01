@@ -5,7 +5,7 @@ const rename = require("gulp-rename");
 
 const paths = {
 	src: './docs/scss/**/*.scss',
-	dest: './docs/css/'
+	dest: './public/css/'
 }
 
 const task = (cb) => {
